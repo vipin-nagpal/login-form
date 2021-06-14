@@ -1,0 +1,177 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Baloo Tammudu 2', cursive;
+    background-color:#c0c0c0 ;
+}
+
+
+.mainbox{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box {
+    width: 40%;
+    height: 70vh;
+    margin-left: 50px;
+    animation: ani 1s ease-in-out infinite alternate;
+}
+@keyframes ani {
+    0% {
+        transform: translateX(5px);
+    }
+    100% {
+        transform: translateX(20px);
+        
+    }
+}
+
+.box img{
+    width: 100%;
+    height: 100%;
+}
+.container{
+    width: 30%;
+    height: 500px;
+    border-radius: 5px;
+    margin: 80px 0px 10px 80px;
+    box-shadow: 0px 0px 5px grey;
+    background-color: white;
+    background-image: linear-gradient(-230deg, 	#D3D3D3 50%, #A8A8A8 50%);
+}
+h1{
+    text-align: center;
+    font-size: 45px;
+    font-weight: 300;
+}
+p{
+    text-align: center;
+    margin-top: -40px;
+}
+form{
+    width: 90%;
+    margin: 30px auto;
+    padding: 10px 10px;
+    
+}
+
+input{
+    width: 100%;
+    margin: 0px 0 10px 0; 
+    height: 50px;
+    font-size: 15px;
+    padding: 0px 10px;
+    border: none;
+    outline: none;
+    background: #fff;
+    color: #333;
+    transition: 0.2s linear;
+}
+input:focus {
+    transform: translatey(5px);
+    border-radius: 5px;
+}
+span{
+    color: red;
+    display: block;
+    line-height: 15px;
+}
+input[type=password]{
+    margin-bottom: 10px;
+}
+input[type=checkbox]{
+    width:20px;
+    margin: 10px 0 10px 10px;
+    height: 13px;
+}
+button[type=submit]{
+    width: 100%;
+    height: 50px;
+    font-size: 15px;;
+    border: none;
+    cursor: pointer;
+    background-color: #CACACA;
+}
+button[type=reset]{
+    width: 100px;
+    height: 40px;
+    font-size: 15px;
+    margin: 20px 0; 
+    border: none;
+    cursor: pointer;
+    background-color: #CACACA;
+}
+button:hover{
+    transform: translatey(5px);
+    border-radius: 5px;
+}
+
+button:hover {
+    animation: ani9 0.4s ease-in-out infinite alternate;
+}
+@keyframes ani9 {
+    0% {
+        transform: translateY(3px);
+    }
+    100% {
+        transform: translateY(5px);
+    }
+}
+
+.forget{
+    margin: 0 0; 
+    text-align: right;
+    margin-top: -50px;
+    
+}
+.forget a{
+    color: black;
+    font-size: 15px;
+    text-decoration: none;
+    
+}
+@media(max-width:955px){
+    .box{
+        width: 30%;
+    }
+    .container{
+        width: 40%;
+    }
+}
+
+@media(max-width:695px){
+    .box{
+        display: none;
+    }
+    .container{
+        width: 80%;
+        margin: 50px auto;
+    }
+}
+@media(max-width:324px){
+    .container{
+        width: 90%;
+    }
+}
+@media(max-width:295px){
+    button[type=reset]{
+        width: 80px;
+        height: 30px;
+    }
+    button[type=submit]{
+        height: 30px;
+    }
+}
+@media(max-width:280px){
+    .forget{
+        margin: 0 0; 
+        text-align: left;
+        margin-top: 0px;
+        
+    }
+}
